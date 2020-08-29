@@ -1,0 +1,243 @@
+/*General*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', 'Helvetica', Arial, sans-serif;
+  width: 100vw;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+h2,
+.title {
+  font-family: 'Baloo Chettan 2', 'Roboto', 'Helvetica', Arial, sans-serif;
+}
+
+.category,
+.header {
+  font-family: 'Abel', 'Roboto', 'Helvetica', Arial, sans-serif;
+}
+
+.details {
+  font-family: 'Arial';
+  font-size: 10px;
+  color: #aaa;
+}
+
+/*Header*/
+
+.header {
+  position: fixed;
+  top: 0;
+  display: grid;
+  grid-template: repeat(2, auto) / 100px auto;
+  width: 100%;
+  background: #fff;
+  
+}
+
+.header__nav {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+}
+
+.logo {
+  width: 100px;
+  padding: 1em;
+  background-color: #f42;
+  background: linear-gradient(to bottom right, #c09, #f42 85%)
+}
+
+.header ul {
+  display: flex;
+  color: #AAA;
+}
+
+.header ul li {
+  padding: 0 1em;
+}
+
+.header a {
+  color: #AAA;
+}
+
+.nav__right {
+  border-left: 1px solid #e2e2e2;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  margin: 0 1em;
+}
+
+.nav__right button {
+  background: #0CC;
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+  font-size: 10px;
+  font-weight: bold;
+  padding: .75em 1em;
+}
+
+.fa-search {
+  padding: 0 1em;
+}
+
+.countdown {
+  padding: 0 1em;
+  color: #f42;
+  font-weight: bold;
+  font-size: 1.25em;
+}
+
+.event_logo {
+  height: 50px;
+}
+
+.header > div {
+  grid-column: 1/ -1;
+  background-color: #fd3;
+  padding: .75em 10em;
+  font-size: .75em;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+/*Main*/
+
+main {
+  margin: 5em .75em;
+}
+
+section:not(:first-child) {
+  max-width: 1000px;
+}
+
+  /*Section 1 : Headlines*/
+
+.headlines ul {
+  display: grid;
+  grid-template: repeat(2, 30vh) / repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+.headlines a {
+  color: #fff;
+  padding: 1.5em;
+}
+
+.title {
+  font-size: 1.75em;
+}
+
+.headlines ul li a {
+  display: grid;
+  grid-gap: 10px;
+  height: 100%;
+  background-size: cover;
+}
+
+    /*1st headline*/
+
+.headlines ul li:first-child .title {
+  font-size: 3.25em;
+}
+
+.headlines ul li:first-child {
+  grid-row: 1 / span 2;
+  grid-column: 1 / span 2;
+  background: linear-gradient(to bottom right, rgba(255, 0, 0, 0.65), rgba(255, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('assets/1.png');
+}
+
+.headlines ul li:first-child a {
+  grid-template-rows: 1fr repeat(3, auto);
+}
+
+.headline .details {
+  color: rgba(255, 255, 255, .8);
+}
+
+.headline__date {
+  justify-self: end;
+}
+
+    /*2nd headline*/
+
+.headlines ul li:nth-child(2) {
+  background: url('assets/2.jpg');
+  background-position: 50% 25%;
+} 
+
+.headlines ul li:nth-child(2) a {
+  align-items: end;
+}
+
+    /*3rd headline*/
+
+.headlines ul li:nth-child(3) a {
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('assets/3.png');
+  background-position-x: 45%;
+  grid-template-rows: 1fr repeat(2, auto);
+  align-items: end;
+}  
+
+  /*Section 2 : Latest news*/
+
+  
