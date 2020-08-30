@@ -49,13 +49,10 @@ table {
 	border-spacing: 0;
 }
 
-<<<<<<< HEAD
 :root {
   --main-red: #f42;
 }
 
-=======
->>>>>>> af48c4d1017e2958479dabfa2fdcd0278ccf8ae6
 * {
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
@@ -70,7 +67,6 @@ body {
 
 a {
   text-decoration: none;
-<<<<<<< HEAD
   color: #000;
 }
 
@@ -81,16 +77,10 @@ img {
 h2,
 h3,
 h4,
-=======
-}
-
-h2,
->>>>>>> af48c4d1017e2958479dabfa2fdcd0278ccf8ae6
 .title {
   font-family: 'Baloo Chettan 2', 'Roboto', 'Helvetica', Arial, sans-serif;
 }
 
-<<<<<<< HEAD
 h2 {
   font-size: 1.75rem;
   letter-spacing: -.075rem;
@@ -98,8 +88,6 @@ h2 {
   margin: 1em 0;
 }
 
-=======
->>>>>>> af48c4d1017e2958479dabfa2fdcd0278ccf8ae6
 .category,
 .header {
   font-family: 'Abel', 'Roboto', 'Helvetica', Arial, sans-serif;
@@ -132,13 +120,8 @@ h2 {
 .logo {
   width: 100px;
   padding: 1em;
-<<<<<<< HEAD
   background-color: var(--main-red);
   background: linear-gradient(to bottom right, #c09, var(--main-red) 85%)
-=======
-  background-color: #f42;
-  background: linear-gradient(to bottom right, #c09, #f42 85%)
->>>>>>> af48c4d1017e2958479dabfa2fdcd0278ccf8ae6
 }
 
 .header ul {
@@ -198,21 +181,14 @@ h2 {
 /*Main*/
 
 main {
-<<<<<<< HEAD
   display: flex;
   flex-direction: column;
   align-items: center;
-=======
->>>>>>> af48c4d1017e2958479dabfa2fdcd0278ccf8ae6
   margin: 5em .75em;
 }
 
 section:not(:first-child) {
-<<<<<<< HEAD
   max-width: 1140px;
-=======
-  max-width: 1000px;
->>>>>>> af48c4d1017e2958479dabfa2fdcd0278ccf8ae6
 }
 
   /*Section 1 : Headlines*/
@@ -224,15 +200,10 @@ section:not(:first-child) {
 }
 
 .headlines a {
-<<<<<<< HEAD
-=======
-  color: #fff;
->>>>>>> af48c4d1017e2958479dabfa2fdcd0278ccf8ae6
   padding: 1.5em;
 }
 
 .title {
-<<<<<<< HEAD
   font-size: 1.5rem;
   line-height: 1.5rem;
 }
@@ -240,9 +211,6 @@ section:not(:first-child) {
 .category,
 .title {
   color: #fff;
-=======
-  font-size: 1.75em;
->>>>>>> af48c4d1017e2958479dabfa2fdcd0278ccf8ae6
 }
 
 .headlines ul li a {
@@ -255,12 +223,8 @@ section:not(:first-child) {
     /*1st headline*/
 
 .headlines ul li:first-child .title {
-<<<<<<< HEAD
   font-size: 3rem;
   line-height: 3rem;
-=======
-  font-size: 3.25em;
->>>>>>> af48c4d1017e2958479dabfa2fdcd0278ccf8ae6
 }
 
 .headlines ul li:first-child {
@@ -303,7 +267,6 @@ section:not(:first-child) {
 
   /*Section 2 : Latest news*/
 
-<<<<<<< HEAD
 .latest_news ul {
   display: grid;
   grid-template: repeat(2, auto) / repeat(4, 1fr);
@@ -582,6 +545,3 @@ footer li {
   width: 100%;
   text-align: center;
 }
-=======
-  
->>>>>>> af48c4d1017e2958479dabfa2fdcd0278ccf8ae6
